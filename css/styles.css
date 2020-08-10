@@ -1,0 +1,270 @@
+/* Week 10: Final Project */
+/* Allison Adolphson ICT 4505 Web Design & Management */
+/* CSS File */
+
+/* Table of Contents 
+---------------------------------------
+- Reset Browser Styles
+- Base Styles
+- Grid Layouts
+- Navigation Bar
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Media Queries
+- Homepage Video
+- Footer
+*/
+
+/* Reset Browser Styles */
+
+/* Base Styles */
+article.homepage {
+    height: calc(100vh - 155px);
+    width: 100%;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+article.subpage {
+    background-color: #ffffff;
+    min-height: calc(100vh - 155px);
+    padding: 0 25px 0 25px;
+}
+body {
+    padding-top: 85px;
+    margin: 0;
+}
+
+/* Grid Layouts */
+    /* About */
+    .aboutInstructor {
+        background-color: #f4f4f4;
+        border-radius: .25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        margin: 16px 24px 16px 24px;
+        padding: 24px 24px 8px 24px;
+    }
+    .aboutStudio {
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .abtCard {
+        background-color: #f4f4f4;
+        border-radius: .25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        margin: 10px 24px 16px 24px;
+        padding: 24px 24px 8px 24px;
+        text-align: justify;
+        width: 45%;
+    }
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        margin: 8px 8px 8px 8px;
+        padding: 4px 4px 4px 4px;
+        width: 30%;
+    }
+    .card-img-left, .card-img-center, .card-img-right {
+        border-radius: 2px;
+        max-width: 100%;
+    }
+    .cardContainer {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+/* Navigation Bar */
+body.homepage nav.navbar {
+    padding: 0;
+}
+.logo {
+    height: 75px;
+    margin-left: 25px;
+}
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.navbar-nav {
+    margin-right: 15px;
+}
+.nav-link {
+    color: #5f7880;
+}
+.nav-link.active {
+    color: #D3D5D4;
+}
+.nav-link:hover {
+    color: #CCA085;
+}
+
+/* Typography */
+.abtWrapper {
+    color: #4B5556;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.abtcred-link {
+    color: #CCA085;
+}
+.abtcred-link:hover {
+    color: #4B5556;
+    text-decoration: none;
+}
+.cardTitle {
+    text-align: center;
+}
+.card h4 {
+    color: #CCA085;
+    font-family: 'Sacramento', cursive;
+    font-size: 28px;
+    text-align: center;
+}
+.card p {
+    text-align: justify;
+}
+.disclaimer {
+    color: #adadad;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 25px 0px 25px;
+}
+.homepage h1 {
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+.homepage h2 {
+    color: #4B5556;
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+}
+.homepage h3 {
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.subpage h1 {
+    color: #5f7880;
+    font-family: 'Sacramento', cursive;
+    font-size: 31px;
+    font-style: normal;
+}
+.subpage p {
+    color: #4B5556;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+/* Links */
+
+/* Buttons */
+
+/* Forms */
+
+/* Lists */
+
+/* Code */
+
+/* Tables*/
+
+/* Spacing */
+
+/* Utilities */
+
+/* Media Queries */
+@media (min-width: 769px) {
+    /* Properties for Large Display */
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Properties for Medium Display */
+}
+@media (max-width: 480px) {
+    /* Properties for Small Display */
+}
+
+/* Homepage Video */
+video {
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    opacity: 0.45;
+    z-index: -1;
+}
+.welcomeMsg {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.videoCredit {
+    background-color: rgba(0, 0, 0, 0);
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.vidcred-link {
+    color: #4B5556;
+    text-decoration: none;
+}
+.vidcred-link:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+.vidWrapper {
+    color: #4B5556;
+    margin-top: -18px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+}
+footer p {
+    color: #5f7880;
+    display: inline-block;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 12px 25px 0 0;
+    text-align: right;
+}
+.link {
+    background-color: #f4f4f4;
+    color: #4B5556;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    float: left;
+    margin: 0;
+    padding: 12px 0 0 25px;
+    text-align: left;
+}
+.link a {
+    color: #4B5556;
+    text-decoration: none;
+}
+.link :hover {
+    color: #CCA085;
+    text-decoration: none;
+}
