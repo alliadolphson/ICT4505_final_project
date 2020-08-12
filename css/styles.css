@@ -32,14 +32,19 @@ article.homepage {
     position: relative;
     z-index: 1;
 }
+article.redirect {
+    background-color: #ffffff;
+    min-height: calc(100vh - 155px);
+    padding: 25px 25px 0 25px;
+}
 article.subpage {
     background-color: #ffffff;
     min-height: calc(100vh - 155px);
     padding: 0 25px 0 25px;
 }
 body {
-    padding-top: 85px;
     margin: 0;
+    padding-top: 85px;
 }
 
 /* Grid Layouts */
@@ -48,20 +53,27 @@ body {
         background-color: #f4f4f4;
         border-radius: .25rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
-        margin: 16px 24px 16px 24px;
-        padding: 24px 24px 8px 24px;
+        margin: 20px 24px 0 24px;
+        padding: 24px 24px 24px 24px;
+    }
+    .aboutPhilosophy {
+        padding-left: 20px;
+    }
+    .aboutStory {
+        padding-right: 20px;
     }
     .aboutStudio {
+        background-color: #f4f4f4;
+        border-radius: .25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
         display: inline-flex;
         justify-content: center;
-        margin-top: 16px;
+        margin: 20px 24px 0 24px;
     }
     .abtCard {
         background-color: #f4f4f4;
         border-radius: .25rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
-        margin: 10px 24px 16px 24px;
-        padding: 24px 24px 8px 24px;
+        padding: 20px 10px 20px 10px;
         text-align: justify;
         width: 45%;
     }
@@ -78,6 +90,20 @@ body {
     .cardContainer {
         display: inline-flex;
         justify-content: center;
+    }
+    /* Pricing */
+    .noticeWrapper {
+        padding-top: 20px;
+    }
+    .pricingCard {
+        padding-top: 20px;
+    }
+    .redirectCard {
+        background-color: #f4f4f4;
+        border-radius: .25rem;
+        padding: 24px 24px 8px 24px;
+        text-align: justify;
+        width: 45%;
     }
 
 /* Navigation Bar */
@@ -119,7 +145,15 @@ body.homepage nav.navbar {
     color: #4B5556;
     text-decoration: none;
 }
-.cardTitle {
+.card-title, .cardTitle {
+    text-align: center;
+}
+.card-subtitle {
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 16px;
     text-align: center;
 }
 .card h4 {
@@ -136,7 +170,19 @@ body.homepage nav.navbar {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-style: italic;
+    padding: 20px 25px 0px 25px;
+}
+
+.redirect p {
+    color: #adadad;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: italic;
     padding: 0 25px 0px 25px;
+}
+h1.pageTitle {
+    margin-top: 20px;
+    text-align: center;
 }
 .homepage h1 {
     color: #5f7880;
@@ -154,10 +200,29 @@ body.homepage nav.navbar {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
+.redirect h1 {
+    color: #5f7880;
+    font-family: 'Sacramento', cursive;
+    font-size: 31px;
+    font-style: normal;
+}
+.redirect h2 {
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    padding: 0 25px 0px 25px;
+}
 .subpage h1 {
     color: #5f7880;
     font-family: 'Sacramento', cursive;
     font-size: 31px;
+    font-style: normal;
+}
+.subpage h2 {
+    color: #5f7880;
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
     font-style: normal;
 }
 .subpage p {
@@ -169,6 +234,24 @@ body.homepage nav.navbar {
 /* Links */
 
 /* Buttons */
+    /* Pricing */
+    .btn.pricingBtn {
+        background-color: #5f7880;
+        color: #f4f4f4;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+    .btn.pricingBtn:hover, .btn.pricingBtn:active {
+        background-color: #CCA085;
+        color: #f4f4f4;
+        border: none;
+    }
+    .pricingBtnWrapper {
+        text-align: center;
+        padding-bottom: 20px;
+        width: 100%;
+    }
 
 /* Forms */
 

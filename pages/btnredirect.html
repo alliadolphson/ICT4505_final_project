@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rambling Odyssey Yoga</title>
     <!-- Stylesheet Reference(s) -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Import Fonts from Google-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Sacramento&display=swap" rel="stylesheet">
@@ -19,16 +19,16 @@
 <body class="homepage">
 <!-- Navigation Bar -->
 <nav class="navbar fixed-top navbar-expand-md" style="background-color: #f4f4f4;">
-    <a class="navbar-brand" href="/index.html"><img class="logo" src="images/roLogo.png" alt="Rambling Odyssey Yoga"></a>
+    <a class="navbar-brand" href="/index.html"><img class="logo" src="/images/roLogo.png" alt="Rambling Odyssey Yoga"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="/pages/about.html">About</a>
             <a class="nav-link" href="/pages/calendar.html">Calendar</a>
-            <a class="nav-link" href="/pages/pricing.html">Pricing</a>
+            <a class="nav-link active" href="/pages/pricing.html">Pricing <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="/pages/contact.html">Contact</a>
             <a class="nav-link" href="/pages/blog.html">Blog</a>
         </div>
@@ -36,24 +36,23 @@
 </nav>
 
 <!-- Page Content -->
-<article class="homepage">
-    <div class="videoBG">
-        <video id="videoBG" poster="poster.JPG" autoplay muted loop>
-            <source src="/images/yoga.mp4" type="video/mp4">
-        </video>
+<article class="redirect">
+    <div>
+        <div class="redirectCard">
+            <div class="aboutStory">
+                <h1 class="cardTitle">Transaction Complete</h1>
+                <p>Thank you for completing your membership with Rambling Odyssey Yoga. Please check your email for more details about your purchase.</p>
+            </div>
+        </div>
+        <div class="noticeWrapper">
+            <h2>Notice</h1>
+            <p>Creating a transaction processing module for Rambling Odyssey Yoga is out of scope for this project. This flow will be created if a real yoga studio would like to purchase this website.</p>
+        </div>
     </div>
-    <div class="welcomeMsg">
-        <h1>you are not a drop in the ocean</h1>
-        <h2>you are an entire ocean in a drop</h2>
-        <h3>- Rumi</h3>
+    <div>
+        <p class="disclaimer">Please note, The Rambling Odyssey Yoga Studio is a made-up studio; it got its start in 2020 when website creator Alli Adolphson needed a topic to build a website for in her ICT-4505 Website Design and Management Class. The studio, owner, instructors, class schedules and pricing, location, and other relevant details about Rambling Odyssey Yoga, etc. have been made up and are not intended to represent real people, places, or class offerings. </p>
     </div>
 </article>
-
-<div class="videoCredit">
-    <div class="vidWrapper">
-        <a class="vidcred-link" href="https://www.pexels.com/video/video-of-doing-yoga-on-seashore-3327806/">Video</a> by <a class="vidcred-link" href="https://www.pexels.com/@taryn-elliott">Taryn Elliott</a> from <a class="vidcred-link" href="https://www.pexels.com/">Pexels</a>
-    </div>
-</div>
 
 <!-- Footer -->
 <footer>
@@ -72,10 +71,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- Video Playback at Half Speed -->
-    <script type="text/javascript">
-        var vid = document.querySelector("#videoBG");
-        vid.playbackRate = 0.5;
-    </script>
 </body>
 </html>
