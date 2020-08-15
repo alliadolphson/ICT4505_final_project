@@ -187,6 +187,10 @@ body.homepage nav.navbar {
 }
 .navbar-nav {
     margin-right: 15px;
+    text-align: center;
+}
+.navbar-toggler-icon {
+    color: #5f7880;
 }
 .nav-link {
     color: #5f7880;
@@ -364,7 +368,7 @@ body.homepage nav.navbar {
         font-style: italic;
     }
     h1.pageTitle {
-        margin-top: 20px;
+        padding-top: 20px;
         text-align: center;
     }
     /* Calendar */
@@ -508,7 +512,11 @@ body.homepage nav.navbar {
         font-family: 'Montserrat', sans-serif;
         font-size: 10px;
         text-align: center;
-        width: 120px;
+        width: 75px;
+    }
+    .calNav .calNavItem {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .calNavLink:hover {
         background-color: #CCA085;
@@ -644,6 +652,7 @@ label {
     }
     .calendarCard {
         width: 100%;
+        margin: 0;
     }
     .calCardBody {
         margin-bottom: -20px;
@@ -655,14 +664,107 @@ label {
 /* Media Queries */
 @media (min-width: 769px) {
     /* Properties for Large Display */
+    .mapIcon {
+        display: none;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     /* Properties for Medium Display */
+    /* Contact */
+    .contactFormHeader {
+        width: 60%;
+    }
+    .contactSidebar {
+        width: 30%;
+    }
 }
 @media (max-width: 480px) {
     /* Properties for Small Display */
+    /* Contact */
+    .contactFormHeader {
+        width: 100%;
+    }
+    .contactSidebar {
+        float: none;
+        display: block;
+        margin: 0;
+        width: auto;
+    }
+    .contactWrapper {
+        display: block;
+    }
+    .logo {
+    }
+    /* Blog */
+    .blogPostHeader {
+        width: 100%;
+    }
+    .btn.bpFilterBtn {
+        margin: 0;
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+    .bpFilterRow {
+        box-shadow: none;
+    }
+    .bpGalleryGrid {
+        grid-template-columns: 1fr;
+    }
+    .carousel .carousel-caption {
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+        width: 70%;
+    }
+    .carousel .carousel-caption h1 {
+        font-size: 28px;
+    }
+    .carousel .carousel-caption p {
+        display: none;
+    }
+    .imageSM img {
+        width: 100%;
+    }
+    .postSidebar {
+        display: none;
+    }
+    .spTitle h1 {
+        font-size: 24px;
+    }
 }
-
+@media (max-width: 768px) {
+    /* Properties for Med & Small Display */
+        /* About */
+        .abtCard {
+            width: 100%;
+        }
+        .aboutInstructor {
+            padding-bottom: 8px;
+        }
+        .aboutStory, .aboutPhilosophy {
+            padding: 0 20px 0 20px;
+        }
+        .card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .cardContainer {
+            display: block;
+        }
+        /* Contact */
+        .mapIcon {
+            padding: 20px;
+        }
+        .mapIcon a {
+            color: #5f7880;
+        }
+        .smMap {
+            display: none;
+        }
+}
 /* Homepage Video */
 #homepageVideo {
     left: 0;
