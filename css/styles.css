@@ -693,8 +693,6 @@ label {
     .contactWrapper {
         display: block;
     }
-    .logo {
-    }
     /* Blog */
     .blogPostHeader {
         width: 100%;
@@ -814,7 +812,6 @@ footer {
 }
 footer p {
     color: #5f7880;
-    display: inline-block;
     float: right;
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
