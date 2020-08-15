@@ -110,7 +110,7 @@ body {
         justify-content: center;
     }
     /* Blog */
-    .blogPostHeader, {
+    .blogPostHeader {
         width: calc(100vw - 350px);
         padding-top: 20px;
     }
@@ -549,8 +549,12 @@ label {
         width: 30px;
     }
     .fa:hover {
-        color: #5f7880;]
+        color: #5f7880;
         text-decoration: none;
+    }
+    /* Calendar */
+    #classTemplate {
+        display: none;
     }
 
 /* Media Queries */

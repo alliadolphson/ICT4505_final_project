@@ -1,0 +1,403 @@
+{
+    "sunday":[
+       {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Sunrise Yoga Flow",
+            "classDescription":"A class focused on individual asanas and slow-paced, mindful movement.",
+            "classTime":"6:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Hatha",
+            "classTarget": "This class is suitable for all skill levels."
+       },
+       {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"8:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+       },
+       {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"10:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength II",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"7:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Intermediate level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit III",
+            "classDescription":"An advanced level class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"9:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Advanced level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Yoga Core Strength III",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"9:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Advanced level students."
+       },
+        {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga I",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"11:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Beginner and Intermediate level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga II",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"12:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Intermediate and Advanced level students."
+       }
+    ],
+    "monday":[
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Sunrise Meditative Yoga",
+            "classDescription":"A slow-paced, spiritually focused class utilizing asana, meditation, chants, and pranayama.",
+            "classTime":"6:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Kundalini",
+            "classTarget": "This class is suitable for all skill levels."
+        },
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"8:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+        },
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"10:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+        }
+    ],
+    "tuesday":[
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Sunrise Meditative Yoga",
+            "classDescription":"A slow-paced, spiritually focused class utilizing asana, meditation, chants, and pranayama.",
+            "classTime":"6:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Kundalini",
+            "classTarget": "This class is suitable for all skill levels."
+        },
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"8:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+        },
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"10:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+        },
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit III",
+            "classDescription":"An advanced class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"12:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Advanced level students."
+       }
+    ],
+    "wednesday":[
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"2:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"4:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit III",
+            "classDescription":"An advanced class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"6:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Advanced level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga I",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"3:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Beginner and Intermediate level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga II",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"5:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Intermediate and Advanced level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Sunset Yoga Flow",
+            "classDescription":"A class focused on individual asanas and slow-paced, mindful movement.",
+            "classTime":"7:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Hatha",
+            "classTarget":"This class is suitable for all skill levels."
+       }
+    ],
+    "thursday":[
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength III",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"2:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Advanced level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength II",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"4:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Intermediate level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength I",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"6:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Beginner level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga I",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"3:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Beginner and Intermediate level students."
+        },
+        {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga II",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"5:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Intermediate and Advanced level students."
+        },
+        {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Sunset Meditation Yoga",
+            "classDescription":"A slow-paced, spiritually focused class utilizing asana, meditation, chants, and pranayama.",
+            "classTime":"7:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Kundalini",
+            "classTarget":"This class is suitable for all skill levels."
+        }
+    ],
+    "friday":[
+       {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Sunrise Yoga Flow",
+            "classDescription":"A class focused on individual asanas and slow-paced, mindful movement.",
+            "classTime":"6:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Hatha",
+            "classTarget":"This class is suitable for all skill levels."
+       },
+       {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit III",
+            "classDescription":"An advanced class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"8:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Advanced level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"9:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"11:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+       },
+       {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength I",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.#",
+            "classTime":"1:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Beginner level students."
+       },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga I",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"12:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Beginner and Intermediate level students."
+        },
+        {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga II",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"2:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Intermediate and Advanced level students."
+        },
+       {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Yoga Core Strength III",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"4:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Advanced level students."
+       }
+    ],
+    "saturday":[
+        {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Sunrise Yoga Flow",
+            "classDescription":"A class focused on individual asanas and slow-paced, mindful movement.",
+            "classTime":"6:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Hatha",
+            "classTarget":"This class is suitable for all skill levels."
+    },
+    {
+            "instuctor":"Amanda Awesome",
+            "classTitle":"Yogafit III",
+            "classDescription":"An advanced class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"8:00 am",
+            "classRoom":"Studio A",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Advanced level students."
+    },
+    {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit I",
+            "classDescription":"A beginner class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"9:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Beginner level students."
+    },
+    {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yogafit II",
+            "classDescription":"An intermediate class designed to get your heart pumping; a fast-paced flow between postures.",
+            "classTime":"11:00 am",
+            "classRoom":"Studio B",
+            "classStyle":"Vinyasa",
+            "classTarget":"This class is suitable for Intermediate level students."
+    },
+    {
+            "instuctor":"Simon Stupendous",
+            "classTitle":"Yoga Core Strength I",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.#",
+            "classTime":"1:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Beginner level students."
+    },
+    {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga I",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"12:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Beginner and Intermediate level students."
+        },
+        {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Hot Yoga II",
+            "classDescription":"A class taught at a temperature of between 95-100 degrees; designed to make you sweat!",
+            "classTime":"2:00 pm",
+            "classRoom":"Studio A",
+            "classStyle":"Bikram",
+            "classTarget":"This class is suitable for Intermediate and Advanced level students."
+        },
+    {
+            "instuctor":"Laurie Likeable",
+            "classTitle":"Yoga Core Strength III",
+            "classDescription":"A physically demanding workout focused on developing routine and discipline.",
+            "classTime":"4:00 pm",
+            "classRoom":"Studio B",
+            "classStyle":"Ashtanga",
+            "classTarget":"This class is suitable for Advanced level students."
+        }
+    ]
+ }
