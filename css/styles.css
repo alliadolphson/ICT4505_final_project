@@ -367,6 +367,57 @@ body.homepage nav.navbar {
         margin-top: 20px;
         text-align: center;
     }
+    /* Calendar */
+    .calCard {
+        background-color: #f4f4f4;
+        color: #5f7880;
+        font-family: 'Sacramento', cursive;
+        font-size: 31px;
+        text-decoration: none;
+    }
+    .calCard:hover {
+        background-color: rgba(95, 120, 128, .25);
+        text-decoration: none;
+    }
+    .calCard .btn:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    .calColTitle {
+        color: #5f7880;
+        font-family: 'Sacramento', cursive;
+        font-size: 31px;
+        text-decoration: none;
+    }
+    .viewDate, .dayOfWeek, .timeClass {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .viewDate {
+        color: #5f7880;
+        font-style: italic;
+        padding-right: 120px
+    }
+    .dayOfWeek {
+        color: #5f7880;
+    }
+    .timeClass {
+        color: #CCA085;
+        font-weight: bold;
+    }
+    .instructor {
+        color: #CCA085;
+        font-family: 'Sacramento', cursive;
+        font-size: 28px;
+    }
+    .title, .style {
+        color: #5f7880;
+        font-weight: bold;
+    }
+    .description, .target {
+        color: #5f7880;
+        font-style: italic;
+    }
     /* Contact */
     .contactWrapper .contactSidebar h1 {
         font-size: 28px;
@@ -441,6 +492,27 @@ body.homepage nav.navbar {
     .btn.bpFilterBtn:hover {
         background-color: #f4f4f4;
         color: #5f7880;
+        border: none;
+    }
+    /* Calendar */
+    .calPagination {
+        margin-bottom: 20px;
+    }
+    .calNav {
+        justify-content: center;
+    }
+    .calNavItem .calNavLink {
+        background-color: #5f7880;
+        border: none;
+        color: #f4f4f4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-align: center;
+        width: 120px;
+    }
+    .calNavLink:hover {
+        background-color: #CCA085;
+        color: #f4f4f4;
         border: none;
     }
     /* Contact */
@@ -553,8 +625,31 @@ label {
         text-decoration: none;
     }
     /* Calendar */
+    .classSession {
+        background-color: #f4f4f4;
+        margin-bottom: 20px;
+        padding: 8px 12px 8px 12px;
+    }
+    .classSession:hover {
+        background-color: rgba(204, 160, 133, .25);
+    }
+    .classSession:nth-child(even) {
+        background-color: #ffffff;
+    }
+    .classSession:nth-child(even):hover {
+        background-color: rgba(204, 160, 133, .25);
+    }
     #classTemplate {
         display: none;
+    }
+    .calendarCard {
+        width: 100%;
+    }
+    .calCardBody {
+        margin-bottom: -20px;
+    }
+    .sessionRow1 {
+        margin-bottom: 4px;
     }
 
 /* Media Queries */

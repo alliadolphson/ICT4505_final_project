@@ -55,28 +55,20 @@
             </ul>
         </div>
         <div class="calSchedule">
-
-
-
-
-
-<div class="accordion" id="calendarAccordion">
-    <div class="card">
-        <div class="card-header calCard" id="Sunday">
-            <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <span id="dayOfWeek"></span> Classes
-                </button>
-            </h2>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="Sunday" data-parent="#calendarAccordion">
-            <div class="card-body calCardBody">
-                Darth Vader is Amazing and I Love Him.
+            <div class="accordion" id="calendarAccordion">
+                <div class="card calendarCard">
+                    <div class="card-header calCard" id="Sunday">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h7 class="calColTitle"><span id="dayOfWeek"></span> Classes</h1>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="Sunday" data-parent="#calendarAccordion">
+                        <div class="card-body calCardBody"><!-- Placeholder Populated by JavaScript --></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-
         </div>
     </div>
     <div>
@@ -527,16 +519,47 @@
                 $(".calCardBody").empty();
                 // For Each Class, Append to Card Content
                 let selectedSchedule = schedule[dayName.toLowerCase()];
+                selectedSchedule.sort(function(a, b){
+                    //Parse Out Number
+                    let pieces = a.classTime.split(" ");
+                    let Bpieces = b.classTime.split(" ");
+                    //Parse Out AM/PM
+                    let time = parseInt(pieces[0]);
+                    let ampm = pieces[1];
+                    let Btime = parseInt(Bpieces[0]);
+                    let Bampm = Bpieces[1];
+                    //If PM, +12 to Number
+                    if(ampm == "pm" && time != 12){
+                        time = time + 12;
+                    }
+                    if(Bampm == "pm" && Btime != 12){
+                        Btime = Btime + 12;
+                    }
+                    //Return Number for Sort
+                    return time - Btime;
+                });
                 selectedSchedule.forEach(function(classSession){
-                    console.log(classSession);
                     //Append Card Content
                     $(".calCardBody").append(`<!-- Template -->
                         <div class="classSession">
-                            <div class="viewDate">${selectedDate.getMonth()+1}/${selectedDate.getDate()}/${selectedDate.getFullYear()}</div>
-                            <div class="instructor">${classSession.instuctor}</div>
-                            <div class="title">${classSession.classTitle}</div>
-                            <div class="description">${classSession.classDescription}</div>
-                        </div>`);
+                            <div class="sessionRow1">
+                                <span class="dayOfWeek">${dayName}, </span>
+                                <span class="viewDate">${selectedDate.getMonth()+1}/${selectedDate.getDate()}/${selectedDate.getFullYear()}</span>
+                                <span class="timeClass">${classSession.classTime}</span> 
+                            </div>
+                            <div class="sessionRow">
+                                <span class="instructor">${classSession.instuctor}</span>
+                            </div>
+                            <div class="sessionRow1">
+                                <span class="title">${classSession.classTitle}: </span>
+                                <span class="description">${classSession.classDescription}</span>
+                            </div>
+                            <div class="sessionRow">
+                                <span class="style">${classSession.classStyle}: </span>
+                                <span class="target">${classSession.classTarget}</span>
+                            </div>
+                        </div>
+                    `);
                 })
             }
             function paginatePrev(){
@@ -547,6 +570,7 @@
             function paginateToday(){
                 let actualToday = new Date();
                 selectedDate.setDate(actualToday.getDate());
+                selectedDate.setMonth(actualToday.getMonth());
                 let dayName = dayNames[selectedDate.getDay()];
                 appendSched(dayName, selectedDate);
             }
