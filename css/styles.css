@@ -12,6 +12,7 @@
 - Links
 - Buttons
 - Forms
+- Images
 - Lists
 - Code
 - Tables
@@ -77,6 +78,19 @@ body {
         text-align: justify;
         width: 45%;
     }
+    .bpGalleryGrid {
+        column-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        width: 100%;
+    }
+    .bpGalleryTile {
+        justify-self: center;
+    }
+    .bpGalleryTile img {
+        width: 100%;
+    }
     .card {
         box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
         margin: 8px 8px 8px 8px;
@@ -87,9 +101,62 @@ body {
         border-radius: 2px;
         max-width: 100%;
     }
+    .card-img {
+        border-radius: 2px;
+        max-width: 90%;
+    }
     .cardContainer {
         display: inline-flex;
         justify-content: center;
+    }
+    /* Blog */
+    .blogPostHeader, {
+        width: calc(100vw - 350px);
+        padding-top: 20px;
+    }
+    .carousel {
+        margin-bottom: 20px;
+    }
+    .mdb-lightbox {
+        display: inline-flex;
+    }
+    .postSidebar {
+        width: 275px;
+    }
+    .socialMedia {
+        text-align: center;
+    }
+    /* Blog & Contact */
+    .blogPostHeader, .contactFormHeader {
+        width: calc(100vw - 350px);
+        padding-top: 20px;
+    }
+    .blogTopper, .contactTopper {
+        display: inline-block;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .postSidebar, .contactSidebar {
+        float: right;
+        margin-left: 25px;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .postTopper, .contactWrapper {
+        display: inline-flex;
+    }
+    /* Contact */
+    .contactFormHeader {
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        margin-bottom: 20px;
+        margin-right: 25px;
+        margin-top: 20px;
+        padding: 20px 20px 20px 20px;
+        width: calc(100vw - 490px);
+    }
+    .contactSidebar {
+        width: 375px;
     }
     /* Pricing */
     .noticeWrapper {
@@ -132,57 +199,19 @@ body.homepage nav.navbar {
 }
 
 /* Typography */
-.abtWrapper {
-    color: #4B5556;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    text-align: center;
-}
-.abtcred-link {
-    color: #CCA085;
-}
-.abtcred-link:hover {
-    color: #4B5556;
-    text-decoration: none;
-}
-.card-title, .cardTitle {
-    text-align: center;
-}
-.card-subtitle {
-    color: #5f7880;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-style: italic;
-    padding-bottom: 16px;
-    text-align: center;
-}
-.card h4 {
-    color: #CCA085;
-    font-family: 'Sacramento', cursive;
-    font-size: 28px;
-    text-align: center;
-}
-.card p {
-    text-align: justify;
-}
 .disclaimer {
-    color: #adadad;
+    color: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-style: italic;
     padding: 20px 25px 0px 25px;
 }
-
 .redirect p {
-    color: #adadad;
+    color: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-style: italic;
     padding: 0 25px 0px 25px;
-}
-h1.pageTitle {
-    margin-top: 20px;
-    text-align: center;
 }
 .homepage h1 {
     color: #5f7880;
@@ -225,22 +254,220 @@ h1.pageTitle {
     font-size: 24px;
     font-style: normal;
 }
+.subpage h3 {
+    color: #4B5556;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.subpage h4 {
+    color: #CCA085;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.subpage h6 {
+    color: #CCA085;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-top: 8px;
+}
+.subpage li {
+    color: #CCA085;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-left: 25px;
+}
 .subpage p {
     color: #4B5556;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
+    /* About */
+    .abtWrapper {
+        color: #4B5556;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    .abtcred-link {
+        color: #CCA085;
+    }
+    .abtcred-link:hover {
+        color: #4B5556;
+        text-decoration: none;
+    }
+    .card-title, .cardTitle {
+        text-align: center;
+    }
+    .card-subtitle {
+        color: #5f7880;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+    .card h4 {
+        color: #cca085;
+        font-family: 'Sacramento', cursive;
+        font-size: 28px;
+        text-align: center;
+    }
+    .card p {
+        text-align: justify;
+    }
+    /* Blog */
+    .bpGalleryGrid .bpGalleryTile a {
+        text-decoration: none;
+    }
+    .bpGalleryGrid .bpGalleryTile h1 {
+        color: #CCA085;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .bpGalleryGrid .bpGalleryTile:hover {
+        background-color: rgba(204, 160, 133, .25);
+        text-decoration: none;
+    }
+    .bpGalleryGrid .bpGalleryTile p {
+        color: #4B5556;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding-top: 8px;
+    }
+    .bpGalleryTile {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        padding: 10px 10px 10px 10px;
+    }
+    .carousel-caption {
+        background-color: rgba(95, 120, 128, .75);
+        cursor: pointer;
+    }
+    .carousel-caption:hover {
+        background-color: rgba(204, 160, 133, .75);
+        cursor: pointer;
+    }
+    .carousel .carousel-caption h1 {
+        color: #ffffff;
+        font-size: 42px;
+    }
+    .carousel .carousel-caption p {
+        color: #ffffff;
+        font-size: 14px;
+        font-style: italic;
+    }
+    h1.pageTitle {
+        margin-top: 20px;
+        text-align: center;
+    }
+    /* Contact */
+    .contactWrapper .contactSidebar h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .contactWrapper .contactSidebar h2 {
+        font-size: 28px;
+    }
+    .contactWrapper .contactSidebar h3 {
+        color: #CCA085;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .contactWrapper .contactSidebar p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    .phWrapper {
+        margin-top: 20px;
+    }
 
 /* Links */
+.blog-link {
+    color: #CCA085;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+.blog-link:hover {
+    color: #4B5556;
+}
 
 /* Buttons */
+    /* Blog */
+    .blogPostBtnWrapper {
+        text-align: left;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .blogPosts .spTitle h1 {
+        margin-bottom: 25px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .bpFilterRow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        display: inline-block;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .btn.blogPostBtn {
+        background-color: #5f7880;
+        color: #f4f4f4;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+    .btn.bpFilterBtn {
+        background-color: #5f7880;
+        color: #f4f4f4;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        margin: 20px 10px 20px 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 150px;
+    }
+    .btn.bpFilterBtn:hover {
+        background-color: #f4f4f4;
+        color: #5f7880;
+        border: none;
+    }
+    /* Contact */
+.contactForm .contactBtn {
+    background-color: #5f7880;
+    color: #f4f4f4;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+.contactForm .contactBtn:hover {
+    background-color: #CCA085;
+    color: #f4f4f4;
+    border: none;
+}
+.contactForm .contactBtn {
+    text-align: center;
+    margin-top: 20px;
+    width: 25%;
+}
     /* Pricing */
     .btn.pricingBtn {
         background-color: #5f7880;
         color: #f4f4f4;
         border: none;
         font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
+        font-size: 14px;
     }
     .btn.pricingBtn:hover, .btn.pricingBtn:active {
         background-color: #CCA085;
@@ -254,6 +481,53 @@ h1.pageTitle {
     }
 
 /* Forms */
+.contactForm input, .contactForm select, .contactForm textarea {
+    color: #5f7880;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-top: 8px;
+}
+label {
+    color: #4B5556;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+/* Images & Videos */
+.blogGallery {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    width: 33%;
+}
+.carousel-inner {
+    max-height: 65vh;
+}
+.imageSM {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+.imageSM img {
+    width: calc(100vw - 350px);
+}
+.videoSM {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+.videoSM video {
+    width: calc(100vw - 350px);
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    max-height: 65vh;
+    width: 100%;
+}
+    /* Contact */
+    .smMap {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+        margin-bottom: 20px;
+    }
 
 /* Lists */
 
@@ -264,6 +538,20 @@ h1.pageTitle {
 /* Spacing */
 
 /* Utilities */
+    /* Blog */
+    .fa {
+        border-radius: 50%;
+        color: #CCA085;
+        font-size: 30px;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        width: 30px;
+    }
+    .fa:hover {
+        color: #5f7880;]
+        text-decoration: none;
+    }
 
 /* Media Queries */
 @media (min-width: 769px) {
@@ -277,7 +565,7 @@ h1.pageTitle {
 }
 
 /* Homepage Video */
-video {
+#homepageVideo {
     left: 0;
     height: 100%;
     width: 100%;
