@@ -4,7 +4,6 @@
 
 /* Table of Contents 
 ---------------------------------------
-- Reset Browser Styles
 - Base Styles
 - Grid Layouts
 - Navigation Bar
@@ -13,24 +12,18 @@
 - Buttons
 - Forms
 - Images
-- Lists
-- Code
-- Tables
-- Spacing
 - Utilities
 - Media Queries
 - Homepage Video
 - Footer
 */
 
-/* Reset Browser Styles */
-
 /* Base Styles */
 article.homepage {
     height: calc(100vh - 155px);
-    width: 100%;
     margin-right: auto;
     position: relative;
+    width: 100%;
     z-index: 1;
 }
 article.redirect {
@@ -93,7 +86,6 @@ body {
     }
     .card {
         box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
-        margin: 8px 8px 8px 8px;
         padding: 4px 4px 4px 4px;
         width: 30%;
     }
@@ -170,7 +162,7 @@ body {
         border-radius: .25rem;
         padding: 24px 24px 8px 24px;
         text-align: justify;
-        width: 45%;
+        width: 100%;
     }
 
 /* Navigation Bar */
@@ -211,7 +203,7 @@ body.homepage nav.navbar {
     padding: 20px 25px 0px 25px;
 }
 .redirect p {
-    color: #f4f4f4;
+    color: #5f7880;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-style: italic;
@@ -241,8 +233,8 @@ body.homepage nav.navbar {
 }
 .redirect h2 {
     color: #5f7880;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
     font-style: normal;
     padding: 0 25px 0px 25px;
 }
@@ -488,9 +480,6 @@ body.homepage nav.navbar {
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         margin: 20px 10px 20px 10px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
         width: 150px;
     }
     .btn.bpFilterBtn:hover {
@@ -609,14 +598,6 @@ label {
         margin-bottom: 20px;
     }
 
-/* Lists */
-
-/* Code */
-
-/* Tables*/
-
-/* Spacing */
-
 /* Utilities */
     /* Blog */
     .fa {
@@ -670,6 +651,17 @@ label {
 }
 @media (min-width: 481px) and (max-width: 768px) {
     /* Properties for Medium Display */
+        /* Blog */
+        .btn.bpFilterBtn {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            width: 150px;
+        }
+        .bpFilterRow {
+            padding-bottom: 20px;
+        }
     /* Contact */
     .contactFormHeader {
         width: 60%;
